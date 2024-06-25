@@ -1,0 +1,313 @@
+.container {
+    margin-top: 40px;
+}
+
+.header {
+    width: 900px;
+    margin: auto;
+    height: 250px;
+    justify-content: center;
+    text-align: center;
+    background: rgb(0, 101, 13);
+    color: white;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.navigation {
+    width: 900px;
+    height: 50px;
+    background: #7ABA78;
+    margin: auto;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+marquee {
+    color: rgb(255, 255, 255);
+    font-size: larger;
+    display: inline-block;
+
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+    width: 900px;
+    gap: 17px;
+    margin: auto;
+}
+
+.content .link {
+    height: 30px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.content .button {
+    background-color: #1A4D2E;
+    padding: 20px 15px;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 7px;
+    transition: all 300ms ease;
+}
+
+button {
+    font-size: 1.2em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 200px;
+    height: 30px;
+    background: none;
+    color: rgb(0, 0, 0);
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 40px;
+    position: relative;
+    box-shadow: 2px 2px 4px rgb(0, 0, 0), -2px -2px 4px #129b0d;
+    overflow: hidden;
+    transition: all 500ms ease;
+
+}
+
+button:hover {
+    color: white;
+}
+
+button:hover::after {
+    left: 0;
+}
+
+button::after {
+    transition: all 300ms ease;
+    z-index: -1;
+    border-radius: 400px;
+    content: "";
+    top: 0;
+    left: 100%;
+    position: absolute;
+    width: 200px;
+    height: 30px;
+    background-color: #1A4D2E;
+    opacity: 85%;
+}
+.content .isicontent {
+    height: 400px;
+    width: 100%;
+
+}
+
+.content .isicontent .cont {
+    border: 4px solid #1A4D2E;
+    width: 240px;
+    height: 240px;
+    border-radius: 10px;
+    transition: 2s;
+}
+
+.content .isicontent .cont:hover {
+    transform: scale(1.1);
+}
+
+.content .isicontent h1 {
+    text-align: center;
+}
+
+.sosmed .sosmedd {
+    margin-left: 10px;
+    border: 1px solid #1A4D2E;
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+    transition: 1s;
+    background-color: aqua;
+}
+
+.sosmed .sosmedd:hover {
+    transform: scale(1.2);
+    z-index: 2;
+}
+
+.content .isicontent p {
+    text-align: justify;
+}
+
+.content .iklan {
+    margin-left: 1px;
+    height: 200px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+
+.content .iklan .boxiklan {
+    margin-left: 1px;
+    border: 1px solid #1A4D2E;
+    height: 200px;
+    width: 150px;
+}
+
+.content.iklan.boxiklan img {
+    height: 200px;
+    width: 150px;
+}
+
+
+.footer {
+    background-color: #1A4D2E;
+    margin: auto;
+    width: 900px;
+    height: 70px;
+    margin-top: 250px;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    text-align: center;
+}
+
+@media only screen and (max-width: 480px) {
+    .header {
+        width: 100%;
+        height: 117px;
+        background: none;
+        color: white;
+    }
+
+    .content {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        width: 100%;
+        align-items: left;
+        margin-bottom: 30px
+    }
+
+    .content .button {
+        background-color: #1A4D2E;
+        padding: 20px 15px;
+        color: white;
+        text-decoration: none;
+    }
+
+    .content .link {
+        width: 100%;
+    }
+
+    .content .link img {
+        display: none;
+    }
+
+    button {
+        width: 100%;
+
+    }
+
+    button::after {
+        width: 100%;
+    }
+
+    .navigation {
+        width: auto;
+    }
+
+    .content .isicontent {
+        height: auto;
+        width: 100%;
+        margin-top: 70px;
+        border-radius: 10px;
+        flex-direction: column;
+    }
+
+    .content.isicontent h1 {
+        text-align: center;
+    }
+
+    .content .isicontent img {
+        width: auto;
+        height: 200px;
+        
+
+    }
+
+    .content .sosmed .sosmedd {
+        margin-left: 10px;
+        border: 1px solid #1A4D2E;
+        border-radius: 10px;
+        width: 30px;
+        height: 30px;
+        transition: 1s;
+    }
+
+    .content .iklan {
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+    }
+
+    .content .iklan .boxiklan {
+        margin-left: 5px;
+        width: 50%;
+        height: 80px;
+        margin-bottom: 100px;
+    }
+
+    .content .iklan .boxiklan img {
+        width: 100px;
+        height: auto;
+
+    }
+
+    .footer {
+        width: auto;
+        height: 50px;
+        margin-top: 10%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 900px) {
+    .header {
+        width: 100%;
+        margin: auto;
+        height: 250px;
+    }
+
+    .navigation {
+        width: 100%;
+        height: 50px;
+    }
+
+    .content {
+        height: auto;
+        width: 100%;
+        gap: 17px;
+    }
+
+    .content .isicontent {
+        height: 400px;
+        width: 100%;
+    }
+
+    .footer {
+        width: 100%;
+        height: 70px;
+        
+    }
+
+}
